@@ -27,9 +27,11 @@ def intersection(arrays):
     final = unique_array[-1]
     # Create a result array
     result = []
-
+    # Loop through the final array
     for value in final:
+        # Use the helper function to determine if that values are identical
         if does_duplicate_exist(value, unique_array[:-1]):
+            # If it does, append the value to the result array
             result.append(value)
 
     return result
